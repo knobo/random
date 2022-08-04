@@ -35,8 +35,9 @@ int main(int argc, char *argv[]) {
     std::exit(1);
   }
 
-  std::uniform_int_distribution<int> d(start, stop);
-  std::random_device rd1; // uses RDRND or /dev/urandom
+  std::random_device rd; // uses RDRND or /dev/urandom
+  std::mt19937 gen(rd());                           //
+  std::uniform_int_distribution<int> dist(start, stop);
   for (int n = 0; n < i; ++n)
-    std::cout << d(rd1) << std::endl;
+    std::cout << dist(rd) << std::endl;
 }
