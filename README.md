@@ -1,9 +1,8 @@
 # random
 A command line tool for creating random numbers
 
-It uses c++ `std::random_device`
-
-https://en.cppreference.com/w/cpp/numeric/random/random_device
+It uses c++ [std::random_device](https://en.cppreference.com/w/cpp/numeric/random/random_device)
+ and c++ [std::uniform_int_distribution](https://en.cppreference.com/w/cpp/numeric/random/uniform_int_distribution)
 
 By default it gives a randum number from 1 to 10
 
