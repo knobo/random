@@ -24,3 +24,13 @@ example:
 $ ./random -c 3 -a 4 
 8 7 4
 ```
+
+# Install
+
+``` sh
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+```
